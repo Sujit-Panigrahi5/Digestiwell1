@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigestiWell.com</title>
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bodytag">
+    <nav class="navbar" >
+
+        <ul class="menudiv">
+            <!-- <li><a href=""><i class="fa-solid fa-bars"></i></a></li> -->
+            <i class="fa-solid fa-house" style="margin-left: 3px; cursor: pointer; font-size: 1.5rem;"onclick="gotohomepage()"></i>
+        </ul>
+        <div class="header">
+
+            <div class="hh">
+                <h1>Digesti-Well</h1>
+            </div>
+            <!-- <div class="cllg"> <img class="logo" src="pics/Removed.png" alt=""></div> -->
+
+
+        </div>
+
+        <ul>
+            <!-- <li><a class="cart" href=""><i class="fa-solid fa-cart-shopping" onclick="gotohomepage()"></i></a></li> -->
+
+            <i class="fa-solid fa-cart-shopping cart"  style="cursor: pointer;"  onclick="gotohomepage()"></i>
+
+        </ul>
+    </nav>
+
+    <div id="nextpage" style="display: block;">
+        <div class="motto" style="">
+
+            <h1> The Taste of Harmony in food</h1>
+    
+        </div>
+        <div class="intro" style="">
+            <p>Welcome to DigestiWell, your haven for food products designed to support a diverse range of dietary
+                needs. We understand that maintaining a balanced diet can be a challenge, especially for those with
+                specific food intolerances. That's why we've curated a selection of high-quality, flavorful goods
+                tailored to accommodate various dietary restrictions. Whether you're navigating gluten sensitivity,
+                lactose intolerance, or other dietary concerns, DigestiWell is here to make your culinary journey
+                enjoyable and worry-free. </p>
+        </div>
+    </div>
+
+    <div class="OP" id="productop" style="display: block;">Our products :
+        <div class="OP-abt">
+            <p> Explore our range of thoughtfully crafted products created to nourish your body and delight your taste
+                buds, <br>
+                all while aligning with your unique dietary requirements. Experience the joy of good food without
+                compromise
+                with DigestiWell.</p>
+        </div>
+
+        <div class="products">
+
+            <div class="productmain1">
+                <div class="pic" id="mainpic1" onmouseover="addtocart('mainpic1','subpic1','info1','atc1')"
+                    onmouseout="show('mainpic1','subpic1','info1','atc1')">
+                    <div class="pic1" id="subpic1">
+                        <img src="./pics/LiceCrean.png" alt="" class="mainimg1">
+                    </div>
+                    <div class="info" id="info1">
+                        <span style="font-size:15px;">Vanilla Lactose Free Ice Cream</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">(473ML)</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Rs.500</span>
+                    </div>
+                    <button id="atc1" class="atc" style="display: none;" onclick="gotocart1('atc1',0)"></button>
+                    <!-- <div id="atc1" class="atc" onclick="gotocart1('atc1')"></div> -->
+                </div>
+
+                <div class="pic" id="mainpic2" onmouseover="addtocart('mainpic2','subpi2','info2','atc2')"
+                    onmouseout="show('mainpic2','subpi2','info2','atc2')">
+                    <div class="pic1" id="subpi2">
+                        <img src="./pics/LiceCrean2.png" alt="" class="mainimg1">
+                    </div>
+
+                    <div class="info" id="info2">
+                        <span style="font-size:15px;">Chocolate Lactose Free Ice Cream</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">(473ML)</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Rs.500</span>
+                    </div>
+                    <button id="atc2" style="display: none;" onclick="gotocart1('atc2',1)"></button>
+                    <!-- <div id="atc2" class="atc" onclick="gotocart1('atc2')"></div> -->
+                </div>
+
+                <div class="pic" id="mainpic3" onmouseover="addtocart('mainpic3','subpic3','info3','atc3')"
+                    onmouseout="show('mainpic3','subpic3','info3','atc3')">
+                    <div class="pic1" id="subpic3">
+                        <img src="./pics/LiceCrean3.png" alt="" class="mainimg1">
+                    </div>
+                    <div class="info" id="info3">
+                        <span style="font-size:15px;">Salty Caramel Lactose Free Ice Cream</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">(473ML)</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Rs.500</span>
+                    </div>
+                    <button id="atc3" style="display: none;" onclick="gotocart1('atc3',2)"></button>
+                    <!-- <div id="atc3" class="atc" onclick="gotocart1('atc3')">Add to cart</div> -->
+                </div>
+
+            </div>
+
+            <div class="productmain1">
+                <div class="pic" id="mainpic4" onmouseover="addtocart('mainpic4','subpic4','info4','atc4')"
+                    onmouseout="show('mainpic4','subpic4','info4','atc4')">
+                    <div class="pic1" id="subpic4">
+                        <img src="./pics/Licecream4.png" alt="" class="mainimg1">
+                    </div>
+                    <div class="info" id="info4">
+                        <span style="font-size:15px;"> Cookies & Cream <br>Lactose Free Ice Cream</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">(473ML)</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Rs.500</span>
+                    </div>
+                    <button id="atc4" style="display: none;"  onclick="gotocart1('atc4',3)"></button>
+                </div>
+
+                <div class="pic" id="mainpic5" onmouseover="addtocart('mainpic5','subpic5','info5','atc5')"
+                    onmouseout="show('mainpic5','subpic5','info5','atc5')">
+                    <div class="pic1" id="subpic5">
+                        <img src="./pics/Licecream5.png" alt="" class="mainimg1">
+                    </div>
+                    <div class="info" id="info5">
+                        <span style="font-size:15px;">Maple Lactose Free Ice Cream</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">(473ML)</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Rs.500</span>
+                    </div>
+                    <button id="atc5" style="display: none;" onclick="gotocart1('atc5',4)"></button>
+                </div>
+
+                <div class="pic" id="mainpic6" onmouseover="addtocart('mainpic6','subpic6','info6','atc6')"
+                    onmouseout="show('mainpic6','subpic6','info6','atc6')">
+                    <div class="pic1" id="subpic6">
+                        <img src="./pics/LiceCrean.png" alt="" class="mainimg1">
+                    </div>
+                    <div class="info" id="info6">
+                        <span style="font-size:15px;">Very Vanilla Lactose Free Ice Cream</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">(473ML)</span>
+                        <span
+                            style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Rs.500</span>
+                    </div>
+                    <button id="atc6" style="display: none;" onclick="gotocart1('atc6',5)"></button>
+                </div>
+
+            </div>
+
+            <footer class="footer">
+
+                <div class="about">
+                    <h3>ABOUT</h3>
+                    <a href="Contact.html">Contact us</a>
+                    <a href="About.html">About us</a>
+                    <a href="">Careers</a>
+                </div>
+
+                <div class="help">
+                    <h3>HELP</h3>
+                    <a href="">FAQ</a>
+                </div>
+
+
+
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+
+                <div class="credit"> &copy; copyright @ 2023 by <span>Rohit Panigrahi</span> | all rights reserved!
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    
+
+    <section  id="atcpage" class="actpage" style="display: none; ">
+        
+        <span style="font-weight: bold; font-size: 1.5rem;">SHOPPING CART</span>
+
+        <section class="cartitem" id="cartitem">
+
+            <div class="iteminfo" id="iteminfo">
+
+                <div id="leftside0" class="leftside" style="display: none;">
+                    <!-- <span style="font-weight: bold; font-size: 1.5rem;">SHOPPING CART</span> -->
+        
+                    <div id="product" class="product">
+                        <div id="addimg" class="addimg">
+                            <img src="./pics/LiceCrean.png" alt="" id="productimg0" class="productimg">
+                        </div>
+
+                        <div id="productinfo" class="productinfo">
+                            <span style="font-size: 1.51rem; " id="productname0">Vanilla Lactose Free Ice Cream</span>
+                            <div id="amount" class="amount">
+                                <span style="font-size: 1.3rem;" id="productprice0">&#8377;2,149</span>
+                            </div>
+                            <div id="count" class="count">
+                                <div id="countadd" class="countadd">
+                                    <span class="no" onclick="minus(0)" style="cursor: pointer;">-</span>
+                                    <span class="no" id="number0">1</span>
+                                    <span onclick="add(0)" style="cursor: pointer;">+</span>
+                                </div>
+                                <button id="removeb" class="removeb" onclick="alremove(0)">Remove</button>
+        
+                            </div>
+                            <!-- <button id="placeorder" class="placeorder">PLACE ORDER</button> -->
+                        </div>
+                    </div>
+                    <!-- <span style="font-size: 1.5rem ;display: none;" id="noitem">No item in cart</span> -->
+                </div>
+                
+                <div id="leftside1" class="leftside" style="display: none;">
+                    <!-- <span style="font-weight: bold; font-size: 1.5rem;">SHOPPING CART</span> -->
+        
+                    <div id="product" class="product">
+                        <div id="addimg" class="addimg">
+                            <img src="./pics/LiceCrean2.png" alt="" id="productimg" class="productimg">
+                        </div>
+                        <div id="productinfo" class="productinfo">
+                            <span style="font-size: 1.51rem; ">Chocolate Lactose Free Ice Cream</span>
+                            <div id="amount" class="amount">
+                                <span style="font-size: 1.3rem;">&#8377;2,149</span>
+                            </div>
+                            <div id="count" class="count">
+                                <div id="countadd" class="countadd">
+                                    <span class="no" onclick="minus(1)" style="cursor: pointer;">-</span>
+                                    <span class="no" id="number1">1</span>
+                                    <span onclick="add(1)" style="cursor: pointer;">+</span>
+                                </div>
+                                <button id="removeb" class="removeb" onclick="alremove(1)">Remove</button>
+        
+                            </div>
+                            <!-- <button id="placeorder" class="placeorder">PLACE ORDER</button> -->
+                        </div>
+                    </div>
+                    <span style="font-size: 1.5rem ;display: none;" id="noitem">No item in cart</span>
+                </div>
+
+                <div id="leftside2" class="leftside" style="display: none;">
+                    <!-- <span style="font-weight: bold; font-size: 1.5rem;">SHOPPING CART</span> -->
+        
+                    <div id="product" class="product">
+                        <div id="addimg" class="addimg">
+                            <img src="./pics/LiceCrean3.png" alt="" id="productimg" class="productimg">
+                        </div>
+                        <div id="productinfo" class="productinfo">
+                            <span style="font-size: 1.51rem; ">Salty Caramel Lactose Free Ice Cream</span>
+                            <div id="amount" class="amount">
+                                <span style="font-size: 1.3rem;">&#8377;2,149</span>
+                            </div>
+                            <div id="count" class="count">
+                                <div id="countadd" class="countadd">
+                                    <span class="no" onclick="minus(2)" style="cursor: pointer;">-</span>
+                                    <span class="no" id="number2">1</span>
+                                    <span onclick="add(2)" style="cursor: pointer;">+</span>
+                                </div>
+                                <button id="removeb" class="removeb" onclick="alremove(2)">Remove</button>
+        
+                            </div>
+                            <!-- <button id="placeorder" class="placeorder">PLACE ORDER</button> -->
+                        </div>
+                    </div>
+                    <span style="font-size: 1.5rem ;display: none;" id="noitem">No item in cart</span>
+                </div>
+
+                <div id="leftside3" class="leftside" style="display: none;">
+                    <!-- <span style="font-weight: bold; font-size: 1.5rem;">SHOPPING CART</span> -->
+        
+                    <div id="product" class="product">
+                        <div id="addimg" class="addimg">
+                            <img src="./pics/Licecream4.png" alt="" id="productimg" class="productimg">
+                        </div>
+                        <div id="productinfo" class="productinfo">
+                            <span style="font-size: 1.51rem; ">Cookies & Cream</span>
+                            <div id="amount" class="amount">
+                                <span style="font-size: 1.3rem;">&#8377;2,149</span>
+                            </div>
+                            <div id="count" class="count">
+                                <div id="countadd" class="countadd">
+                                    <span class="no" onclick="minus(3)" style="cursor: pointer;">-</span>
+                                    <span class="no" id="number3">1</span>
+                                    <span onclick="add(3)" style="cursor: pointer;">+</span>
+                                </div>
+                                <button id="removeb" class="removeb" onclick="alremove(3)">Remove</button>
+        
+                            </div>
+                            <!-- <button id="placeorder" class="placeorder">PLACE ORDER</button> -->
+                        </div>
+                    </div>
+                    <span style="font-size: 1.5rem ;display: none;" id="noitem">No item in cart</span>
+                </div>
+
+                <div id="leftside4" class="leftside" style="display: none;">
+                    <!-- <span style="font-weight: bold; font-size: 1.5rem;">SHOPPING CART</span> -->
+        
+                    <div id="product" class="product">
+                        <div id="addimg" class="addimg">
+                            <img src="./pics/Licecream5.png" alt="" id="productimg" class="productimg">
+                        </div>
+                        <div id="productinfo" class="productinfo">
+                            <span style="font-size: 1.51rem; ">Maple Lactose Free Ice Cream</span>
+                            <div id="amount" class="amount">
+                                <span style="font-size: 1.3rem;">&#8377;2,149</span>
+                            </div>
+                            <div id="count" class="count">
+                                <div id="countadd" class="countadd">
+                                    <span class="no" onclick="minus(4)" style="cursor: pointer;">-</span>
+                                    <span class="no" id="number4">1</span>
+                                    <span onclick="add(4)" style="cursor: pointer;">+</span>
+                                </div>
+                                <button id="removeb" class="removeb" onclick="alremove(4)">Remove</button>
+        
+                            </div>
+                            <!-- <button id="placeorder" class="placeorder">PLACE ORDER</button> -->
+                        </div>
+                    </div>
+                    <span style="font-size: 1.5rem ;display: none;" id="noitem">No item in cart</span>
+                </div>
+
+
+                <div id="leftside5" class="leftside" style="display: none;">
+                    <!-- <span style="font-weight: bold; font-size: 1.5rem;">SHOPPING CART</span> -->
+        
+                    <div id="product" class="product">
+                        <div id="addimg" class="addimg">
+                            <img src="./pics/LiceCrean.png" alt="" id="productimg" class="productimg">
+                        </div>
+                        <div id="productinfo" class="productinfo">
+                            <span style="font-size: 1.51rem; ">Very Vanilla Lactose Free Ice Cream</span>
+                            <div id="amount" class="amount">
+                                <span style="font-size: 1.3rem;">&#8377;2,149</span>
+                            </div>
+                            <div id="count" class="count">
+                                <div id="countadd" class="countadd">
+                                    <span class="no" onclick="minus(5)" style="cursor: pointer;">-</span>
+                                    <span class="no" id="number5">1</span>
+                                    <span onclick="add(5)" style="cursor: pointer;">+</span>
+                                </div>
+                                <button id="removeb" class="removeb" onclick="alremove(5)">Remove</button>
+        
+                            </div>
+                            <!-- <button id="placeorder" class="placeorder">PLACE ORDER</button> -->
+                        </div>
+                    </div>
+                    <span style="font-size: 1.5rem ;display: none;" id="noitem">No item in cart</span>
+                </div>
+                
+            </div>
+
+            <div class="placeorderholder">
+                <button id="placeorder" class="placeorder">PLACE ORDER</button>
+            </div>
+        </section>
+        <!-- <span style="font-size: 1.5rem ;display: none;" id="noitem">No item in cart</span> -->
+        
+
+        
+    </section>
+    <!-- <img src="./pics/Licecream5.png" alt=""> -->
+
+</body>
+<script src="./script.js"></script>
+
+</html>
